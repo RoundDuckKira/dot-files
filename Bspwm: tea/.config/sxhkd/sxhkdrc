@@ -6,7 +6,7 @@
 
 # Terminal emulator
 super + Return
-        st
+        kitty
 
 #Draw a Term Using mouse
 super + grave
@@ -29,9 +29,9 @@ super + n
        
                      				    ### APPS
 
-# chromium
+# firefox
 super + b
-	chromium
+	firefox
 
 # dolphin
 super + alt + f
@@ -58,9 +58,9 @@ XF86AudioNext
 XF86AudioPrev
 	$HOME/bin/mpvctl  -p
 
-## volume
-XF86Audio{RaiseVolume,LowerVolume,Mute}
-	amixer {sset Master 5%+,sset Master 5%-,sset Master toggle}
+
+
+
 
 #------------------------------------------------------------------------------------------------------------------------------------
 			                           ### MISCELLANEOUS

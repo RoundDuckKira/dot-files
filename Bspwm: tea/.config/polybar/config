@@ -19,7 +19,7 @@ border-left-size = 10
 ;----------;
 
 bottom = false
-monitor = eDP1
+monitor = VGA-1
 wm-restack = bspwm
 override-redirect = false
 
