@@ -5,7 +5,7 @@
 
 * **OS:** Void Linux
  
-* **WM:** bspwm, i3-gaps
+* **WM:** bspwm
  
 * **Terminal:** [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
 
