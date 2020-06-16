@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=CrossCode
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/368340
+Icon=steam_icon_368340
+Terminal=false
+Type=Application
+Categories=Game;

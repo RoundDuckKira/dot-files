@@ -1,0 +1,28 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Firefox-E0RVJ0.desktop
+x-scheme-handler/https=userapp-Firefox-E0RVJ0.desktop
+x-scheme-handler/ftp=userapp-Firefox-E0RVJ0.desktop
+x-scheme-handler/chrome=userapp-Firefox-E0RVJ0.desktop
+text/html=userapp-Firefox-E0RVJ0.desktop
+application/x-extension-htm=userapp-Firefox-E0RVJ0.desktop
+application/x-extension-html=userapp-Firefox-E0RVJ0.desktop
+application/x-extension-shtml=userapp-Firefox-E0RVJ0.desktop
+application/xhtml+xml=userapp-Firefox-E0RVJ0.desktop
+application/x-extension-xhtml=userapp-Firefox-E0RVJ0.desktop
+application/x-extension-xht=userapp-Firefox-E0RVJ0.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Firefox-E0RVJ0.desktop;
+x-scheme-handler/https=userapp-Firefox-E0RVJ0.desktop;
+x-scheme-handler/ftp=userapp-Firefox-E0RVJ0.desktop;
+x-scheme-handler/chrome=userapp-Firefox-E0RVJ0.desktop;
+text/html=userapp-Firefox-E0RVJ0.desktop;
+application/x-extension-htm=userapp-Firefox-E0RVJ0.desktop;
+application/x-extension-html=userapp-Firefox-E0RVJ0.desktop;
+application/x-extension-shtml=userapp-Firefox-E0RVJ0.desktop;
+application/xhtml+xml=userapp-Firefox-E0RVJ0.desktop;
+application/x-extension-xhtml=userapp-Firefox-E0RVJ0.desktop;
+application/x-extension-xht=userapp-Firefox-E0RVJ0.desktop;
+application/octet-stream=org.kde.ark.desktop;
+application/pdf=okularApplication_pdf.desktop;
+audio/x-mpegurl=audacious.desktop;

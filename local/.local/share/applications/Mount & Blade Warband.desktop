@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mount & Blade: Warband
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/48700
+Icon=steam_icon_48700
+Terminal=false
+Type=Application
+Categories=Game;

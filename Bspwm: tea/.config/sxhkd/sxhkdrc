@@ -8,9 +8,6 @@
 super + Return
         kitty
 
-#Draw a Term Using mouse
-super + grave
-	 sh ~/bin/term_draw.sh
 
 #------------------------------------------------------------------------------------------------------------------------------------
 
@@ -19,11 +16,7 @@ super + grave
 # rofi run
 super + d
 	rofi -show drun
-	#rofi -show run -lines 20 -location 1 -xoffset 25 -yoffset 91
 
-# rofi-wal
-super + n
-	~/bin/Theme-change
 
 #----------------------------------------------------------------------------------------------------------------------------------------
        
@@ -37,9 +30,6 @@ super + b
 super + alt + f
 	dolphin
 
-# calculator
-super + 0
-	=
 
 #------------------------------------------------------------------------------------------------------------------------------------
 
@@ -58,7 +48,11 @@ XF86AudioNext
 XF86AudioPrev
 	$HOME/bin/mpvctl  -p
 
-
+XF86Audio{Lower,Raise}Volume{_, + alt}
+	pamixer --{decrease,increase} {4,10} && \
+	pamixer --get-volume > $XOBPIPES/vol
+XF86AudioMute
+	pamixer --toggle-mute
 
 
 
@@ -73,19 +67,13 @@ XF86MonBrightness{Up,Down}
 super + shift l
 	#sh ~/scripts/lock.sh
 
-# clipboard
-super + c
-	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
-
 # screenshot
 Print
-	sh ~/bin/screenshot-menu.sh
+	scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/'
 
 #Rofi-Emoji Select
 super + Delete
-	~/bin/rofi-emoji
-
-
+	rofi -show emoji -modi emoji
 
 
 # make sxhkd reload its configuration files:
@@ -135,7 +123,7 @@ super + ctrl + {m,x,y,z}
 
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
+super + {_,shift + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
@@ -154,6 +142,7 @@ super + bracket{left,right}
 #super + {Tab,grave}
 #	bspc {node,desktop} -f last
 
+
 # focus the older or newer node in the focus history
 super + {o,i}
 	bspc wm -h off; \
@@ -169,7 +158,7 @@ super + {_,shift + }{1-9,0}
 
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
+super + ctrl + {Left,Down,Up,Right}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
@@ -194,7 +183,7 @@ super + alt + {Left,Down,Up,Right}
 
 # contract a window by moving one of its side inward
 super + alt + shift + {Left,Down,Up,Right}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+	bspc node -z {left 20 0,bottom 0 -20,top 0 20,right -20 0}
 
 # move a floating window
 super + {Left,Down,Up,Right}

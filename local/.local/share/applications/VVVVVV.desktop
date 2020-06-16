@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=VVVVVV
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/70300
+Icon=steam_icon_70300
+Terminal=false
+Type=Application
+Categories=Game;

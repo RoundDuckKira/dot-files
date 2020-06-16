@@ -1,0 +1,60 @@
+#! /bin/sh
+
+
+# Autostart
+pkill picom
+pkill sxhkd
+pkill pulseaudio
+#pkill batterywarn
+sleep 0.1
+
+feh --bg-fill ~/Wallpapers/tea.jpg
+
+xrdb ~/xrdb/tea/tea &
+picom --config /home/kira/.config/picom/picom.conf -b &
+/usr/bin/pulseaudio --start --log-target=syslog &
+
+/usr/bin/xdg-user-dirs-update
+
+/usr/libexec/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+sh /home/kira/.config/polybar/launch-berry.sh &
+setxkbmap -model pc105 -layout us -option grp:alt_shift_toggle &
+sxhkd -c .config/sxhkd/sxhkdrc-berry &
+# wal -R -o wal-set &
+#xautolock -time 10 -locker "~/scripts/lock.sh" &
+xsetroot -cursor_name left_ptr &
+
+# Berry titlebar font
+berryc set_font "Fira Sans 10"
+berryc draw_text true
+
+# Workspaces
+
+#berryc name_desktop 1 web
+#berryc name_desktop 2 code
+#berryc name_desktop 3 media
+#berryc name_desktop 4 edit
+#berryc name_desktop 5 graphics
+#berryc name_desktop 6 other
+
+
+
+# Source the colors
+
+#source "${HOME}/.cache/wal/colors.sh"
+. "${HOME}/.cache/wal/colors.sh"
+
+
+# Set the border colors
+
+berryc inner_unfocus_color "$color1"
+berryc inner_focus_color "$color15"
+
+# Restart dunst with the new color scheme
+
+#mkdir -p  "${HOME}/.config/dunst"
+#ln -sf    "${HOME}/.cache/wal/bspwm-dunstrc" "${HOME}/.config/dunst/bspwm-dunstrc"
+#
+pkill dunst
+sleep 0.1
+dunst -conf ~/.config/dunst/bspwm-dunstrc &

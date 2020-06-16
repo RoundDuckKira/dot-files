@@ -19,7 +19,7 @@ border-left-size = 10
 ;----------;
 
 bottom = false
-monitor = VGA-1
+monitor = eDP-1
 wm-restack = bspwm
 override-redirect = false
 
@@ -27,7 +27,7 @@ override-redirect = false
 ; FONTS ;
 ;-------;
 
-font-0 = Hack Nerd Font:size=10;3
+font-0 = "Hack Nerd Font:size=10;3"
 font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=12;3"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=12;3"
 font-3 = "Font Awesome 5 Brands:pixelsize=12;3"
@@ -36,7 +36,7 @@ font-3 = "Font Awesome 5 Brands:pixelsize=12;3"
 ; COLORS ;
 ;--------;
 background = 0
-foreground = #a6a9b7
+foreground = #ff79c6
 border-color = 0
 third = ${xrdb:color2:#222}
 
@@ -49,69 +49,12 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-modules-left = volume backlight battery discord prev play_pause next
+modules-left = battery volume backlight discord prev play_pause next
 modules-center = bspwm
 modules-right = mpv wlan cpu time
 
-tray-position = none
+tray-position = none 
 tray-detached = true
-
-;--------------------------------------------------------------------------------------------------------------------------------------------;
-
-[bar/mpd]
-;------------;
-; DIMENSIONS ;
-;------------;
-
-width = 100%
-height = 20
-offset-y = 0
-offset-x = 0
-
-border-top-size = 10
-border-bottom-size = 0
-border-right-size = 10
-border-left-size = 10
-
-;----------;
-; LOCATION ;
-;----------;
-
-bottom = true
-monitor = eDP1
-wm-restack = none
-override-redirect = false
-
-;-------;
-; FONTS ;
-;-------;
-
-font-0 = Hack:size=10;3
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;3"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;3"
-font-3 = "Font Awesome 5 Brands:pixelsize=10;3"
-
-;--------;
-; COLORS ;
-;--------;
-
-background = 0
-foreground = #a6a9b7
-border-color = 0
-
-;---------------;
-; MISCELLANEOUS ;
-;---------------;
-
-fixed-center = true
-padding-left = 2 
-padding-right = 2
-module-margin = 1.5
-
-;modules-left = 
-modules-center = mpd
-;modules-right = 
-
 
 ;---------;
 ; MODULES ;
@@ -181,11 +124,12 @@ label = %date%
 [module/battery]
 type = internal/battery
 
-battery = BAT1
+battery = BAT0
+adapter = ADP1
 
 poll-interval = 1
 
-full-at = 95
+full-at = 100
 
 label-discharging = %percentage%%
 label-charging = %percentage%%
@@ -238,7 +182,7 @@ type = internal/backlight
 
 ; Use the following command to list available cards:
 ; $ ls -1 /sys/class/backlight/
-card = radeon_bl0
+card = intel_backlight
 
 format = <ramp> <label>
 
@@ -251,7 +195,7 @@ ramp-2 = 
 [module/wlan]
 type = internal/network
 
-interface = wlp0s20u1
+interface = wlan0
 
 interval = 5
 
@@ -269,7 +213,7 @@ label =  %gb_used%
 
 [module/network]
 type = internal/network
-interface = wlp2s0
+interface = wlan0
 label-connected =  %downspeed% |  %upspeed%
 
 
@@ -288,27 +232,27 @@ menu-0-0-exec = telegram-desktop &
 menu-0-1 = DSCRD
 menu-0-1-exec = Discord &
 menu-0-2 = KILL
-menu-0-2-exec = killall Discord | killall Discord | killall telegram-deskto
+menu-0-2-exec = killall Discord | killall Discord | killall telegram-desktop
 
 format-padding = 1
 
 [module/prev]
 type = custom/text
 content = 
-click-left = "bin/bash $HOME/bin/mpvctl -p "
-click-right = "/bin/bash $HOME/bin/mpvctl -b "
+click-left = "/bin/sh $HOME/bin/mpvctl -p "
+click-right = "/bin/sh $HOME/bin/mpvctl -b "
 
 [module/play_pause]
 type = custom/text
 content = 
-click-left = "/bin/bash $HOME/bin/mpvctl -t "
-click-right = "/bin/bash $HOME/bin/mpvctl -q "
+click-left = "/bin/sh $HOME/bin/mpvctl -t "
+click-right = "/bin/sh $HOME/bin/mpvctl -q "
 
 [module/next]
 type = custom/text
 content = 
-click-left = "/bin/bash  $HOME/bin/mpvctl -n "
-click-right = "/bin/bash $HOME/bin/mpvctl -f "
+click-left = "/bin/sh  $HOME/bin/mpvctl -n "
+click-right = "/bin/sh $HOME/bin/mpvctl -f "
 
 [module/mpv]
 type = custom/script

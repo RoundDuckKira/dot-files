@@ -1,0 +1,33 @@
+[CreateDialog]
+LastMimeType=application/x-xz-compressed-tar
+
+[ExtractDialog]
+DirHistory[$e]=$HOME/GodotProjects/
+Height 1080=560
+Width 1920=1278
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME,file:$HOME
+Recent URLs[$e]=file:$HOME/GodotProjects/
+detailViewIconSize=0
+
+[MainWindow]
+Height 1080=484
+State=AAAA/wAAAAD9AAAAAAAAA6QAAAGBAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=932
+splitterSizes=621,310
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/KOTOR Editable Executable.rar
+File2[$e]=$HOME/Downloads/222am_linux.zip
+File3[$e]=$HOME/Downloads/void-aarch64-musl-ROOTFS-20191109.tar.xz
+Name1[$e]=KOTOR Editable Executable.rar
+Name2[$e]=222am_linux.zip
+Name3[$e]=void-aarch64-musl-ROOTFS-20191109.tar.xz
+
+[Viewer]
+Height 1080=469
+State=AAAA/wAAAAD9AAAAAAAAA5UAAAGSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=917

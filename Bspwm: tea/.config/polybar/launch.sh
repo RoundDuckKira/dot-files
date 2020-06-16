@@ -1,12 +1,6 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
-# Terminate already running bar instances
 killall -q polybar
-
-
-
-# Launch bar1 and bar2
+sleep 0.2
 polybar white &
-#polybar bar2 &
-
 echo "Bars launched..."

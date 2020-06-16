@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Valkyria Chronicles 4 Complete Edition
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/790820
+Icon=steam_icon_790820
+Terminal=false
+Type=Application
+Categories=Game;

@@ -3,17 +3,17 @@
 ## Details
 
 
-* **OS:** Bedrock Linux {Void + Arch}
+* **OS:** Void Linux
  
 * **WM:** bspwm, i3-gaps
  
-* **Terminal:** [st](https://gitlab.com/Tanish2002/st-tanish2002)
+* **Terminal:** [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
 
 *  **File Manager:** Ranger for Terminal, Dolphin for GUI
  
 * **Terminal Font:** Hack Nerd Font Mono, FuraCode Nerd Font Mono Bold
  
-* **Shell:** zsh
+* **Shell:** loksh
  
 * **Bar:** polybar
  
@@ -29,56 +29,33 @@
 Credit: [Vista1nik](https://github.com/Vista1nik/i3-mountains)
 
 
-## Bspwm: Pywal
-![preview-Bspwm](Screenshots/bspwm:Pywal2.png)
-![preview-Bspwm](Screenshots/bspwm:Pywal1.png)
-![preview-Bspwm](Screenshots/bspwm:Pywal3.png)
-### Info
-##### Color Scheme is Changable Using Pywal, Most of The wallpapers in my [Wallpapers](https://gitlab.com/Tanish2002/dot-files/-/tree/master/Wallpapers%2FWallpapers) Folder <br />
-##### What's on Screen: Polybar, pfetch
-Credit: Me :) 
-
 ## Bspwm: Tea
 ![preview-Bspwm](Screenshots/bspwm:Tea.png)
 ### Info
-##### Color Scheme is Made by [me](https://gitlab.com/Tanish2002/dot-files/-/tree/master/xrdb%2Fxrdb)
+##### Color scheme is based off of the original Tea config from Tanish, as well as a modified Dracula with
+ more pink :D
 ##### What's on Screen: Polybar, pfetch
-Credit: Me again :) 
+Credit: Not me too much really, it's mostly Tanish and other assorted groups, and I just ripped things and
+ changed them.
 
-## Bspwm: Lake
-![preview-Bspwm1](Screenshots/bspwm:Lake1.png)
-![preview-Bspwm2](Screenshots/bspwm:Lake2.png)
-### Info
-##### Color Scheme is Made by [me](https://gitlab.com/Tanish2002/dot-files/-/tree/master/xrdb%2Fxrdb)
-##### What's on Screen: Polybar, pfetch, neovim, Ranger
-Credit: Meeeee 
-
-## Bspwm: Forest
-![preview-Bspwm1](Screenshots/bspwm:Forest1.png)
-![preview-Bspwm2](Screenshots/bspwm:Forest2.png)
-### Info
-##### Color Scheme is Made by [me](https://gitlab.com/Tanish2002/dot-files/-/tree/master/xrdb%2Fxrdb)
-##### What's on Screen: Polybar, pfetch, colorpanes script
-Credit: ME   //I don't Steal Now a days 
 
 ## Installation
 
 ### **Clone my repo**
 ```
-$ Sudo xbps-install -S git                                  // Use ur distro's command to install Git
-$ git clone https://gitlab.com/Tanish2002/dot-files
+$ Sudo xbps-install -S git                                  // Use ur distro's command to install Git; this example is for Void Linux
+$ git clone https://gitlab.com/RoundDuckKira/dot-files
 $ cd dotfiles/
 ``` 
 
 ### **Use stow**
 ```
 $ Sudo xbps-install -S stow                                // Use ur distro's command to install GNU-stow
-$ stow <WM-Name> -t ~/
+$ stow "Bspwm: tea" -t ~/
 $ stow xrdb -t ~/
 $ stow Wallpapers -t ~/
-$ stow bin -t ~/
 
-Do basic stuff like using pywal or xrdb and adding bin to $PATH
+Do basic stuff like using xrdb
 ```
 
 ### **And Voilla That's All!!**`
@@ -86,10 +63,9 @@ Do basic stuff like using pywal or xrdb and adding bin to $PATH
 ## Uninstallation
 ```
 $ cd dot-files/
-$ stow -D <WM-Name>
+$ stow -D "Bspwm: tea"
 $ stow -D xrdb
 $ stow -D Wallpapers
-$ stow -D bin
 $ cd ..
 $ rm -rf dot-files/
 $ sudo xbps-remove -R stow git                                // Use ur distro's command to uninstall GNU-stow and git
@@ -97,7 +73,4 @@ $ sudo xbps-remove -R stow git                                // Use ur distro's
 
 ### Some More Info
 **For helpful scripts Check Out:** [bin](https://gitlab.com/Tanish2002/dot-files/-/tree/master/bin%2Fbin) <br />
-**For My build of st:**[Here](https://gitlab.com/Tanish2002/st-tanish2002)
 
-##### Here is a example of me...changing my Themes
-![preview-gif](Screenshots/Theme-change.gif)

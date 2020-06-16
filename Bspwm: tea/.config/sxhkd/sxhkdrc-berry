@@ -1,0 +1,147 @@
+#### WM INDEPENDENT HOTKEYS
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+
+				                   ### TERMINAL
+
+# Terminal emulator
+super + Return
+        kitty
+
+#Draw a Term Using mouse
+super + grave
+	 sh ~/bin/term_draw.sh
+
+#------------------------------------------------------------------------------------------------------------------------------------
+
+				                    ### ROFI
+
+# rofi run
+super + d
+	rofi -show drun
+	#rofi -show run -lines 20 -location 1 -xoffset 25 -yoffset 91
+
+# rofi-wal
+super + n
+	~/bin/Theme-change
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+       
+                     				    ### APPS
+
+# firefox
+super + b
+	firefox
+
+# dolphin
+super + alt + f
+	dolphin
+
+# calculator
+super + 0
+	=
+
+#------------------------------------------------------------------------------------------------------------------------------------
+
+			                       ### MPV(Multimedia Player)
+
+## MPV_Playlist Menu
+super + m
+        ~/bin/rofi_mpvtube
+## MPVCTL
+XF86AudioPlay
+	$HOME/bin/mpvctl -t
+
+XF86AudioNext
+	$HOME/bin/mpvctl -n
+
+XF86AudioPrev
+	$HOME/bin/mpvctl  -p
+
+XF86Audio{Lower,Raise}Volume{_, + alt}
+	pamixer --{decrease,increase} {4,10} && \
+	pamixer --get-volume > $XOBPIPES/vol
+XF86AudioMute
+	pamixer --toggle-mute
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------
+			                           ### MISCELLANEOUS
+
+# Brightness
+XF86MonBrightness{Up,Down}
+	xbacklight {-inc 10,-dec 10,}
+
+# lockscreen
+super + shift l
+	#sh ~/scripts/lock.sh
+
+# screenshot
+Print
+	sh ~/bin/screenshot-menu.sh
+
+#Rofi-Emoji Select
+super + Delete
+	~/bin/rofi-emoji
+
+
+
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+
+			                            ### BSPWM HOTKEYS
+
+
+
+# close and kill
+super + shift + q
+#alt + q
+	berryc window_close
+
+
+
+
+
+				                     ## State/Flags
+
+
+super + f
+	berryc fullscreen
+
+
+
+				                  ## Focus/Swap
+
+
+
+
+
+
+
+
+
+
+
+				                       ## Preselect
+
+
+
+
+
+
+
+				                      # Move/Resize
+
+super + alt + {Left,Down,Up,Right}
+	berryc window_resize {-20 0, 0 20, 0 -20, 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	berryc window_move {-20 0, 0 20, 0 -20, 20 0}
+
+ 

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Overgrowth
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/25000
+Icon=steam_icon_25000
+Terminal=false
+Type=Application
+Categories=Game;

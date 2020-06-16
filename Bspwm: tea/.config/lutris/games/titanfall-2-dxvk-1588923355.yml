@@ -1,0 +1,19 @@
+game:
+  arch: win64
+  exe: drive_c/Program Files (x86)/Origin/Origin.exe
+  prefix: /home/kira/Games/titanfall-2
+system:
+  env:
+    DXVK_CONFIG_FILE: /home/kira/Games/titanfall-2/dxvk.conf
+    DXVK_HUD: '1'
+    DXVK_STATE_CACHE_PATH: /home/kira/Games/titanfall-2
+    STAGING_SHARED_MEMORY: '0'
+  exclude_processes: QtWebEngineProcess.exe ActivationUI.exe OriginWebHelperService.exe
+  prime: true
+wine:
+  dxvk: true
+  esync: true
+  overrides:
+    nvapi,nvapi64: disabled
+    xaudio2_7: native,builtin
+  version: lutris-5.6-2-x86_64
