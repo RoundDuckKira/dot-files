@@ -21,14 +21,6 @@
  
 ## Previews
 
-## i3-gaps: Mountains
-![preview-i3](Screenshots/i3:Mountains.png)
-### Info
-##### Color Scheme is pretty much Fixed
-##### What's on Screen: Polybar, feh, ufetch, cava
-Credit: [Vista1nik](https://github.com/Vista1nik/i3-mountains)
-
-
 ## Bspwm: Tea
 ![preview-Bspwm](Screenshots/bspwm:Tea.png)
 ### Info
