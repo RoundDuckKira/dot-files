@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=TIS-100
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/370360
-Icon=steam_icon_370360
-Terminal=false
-Type=Application
-Categories=Game;

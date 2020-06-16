@@ -24,11 +24,9 @@
 ## Bspwm: Tea
 ![preview-Bspwm](Screenshots/bspwm:Tea.png)
 ### Info
-##### Color scheme is based off of the original Tea config from Tanish, as well as a modified Dracula with
- more pink :D
+##### Color scheme is based off of the original Tea config from Tanish, as well as a modified Dracula with more pink :D
 ##### What's on Screen: Polybar, pfetch
-Credit: Not me too much really, it's mostly Tanish and other assorted groups, and I just ripped things and
- changed them.
+Credit: Not me too much really, it's mostly Tanish and other assorted groups, and I just ripped things and changed them.
 
 
 ## Installation

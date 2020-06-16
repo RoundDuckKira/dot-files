@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Skullgirls
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/245170
-Icon=steam_icon_245170
-Terminal=false
-Type=Application
-Categories=Game;

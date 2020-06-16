@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Hypnospace Outlaw
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/844590
-Icon=steam_icon_844590
-Terminal=false
-Type=Application
-Categories=Game;

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=SUPERHOT
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/322500
-Icon=steam_icon_322500
-Terminal=false
-Type=Application
-Categories=Game;

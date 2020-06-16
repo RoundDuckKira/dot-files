@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=The Stanley Parable
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/221910
-Icon=steam_icon_221910
-Terminal=false
-Type=Application
-Categories=Game;

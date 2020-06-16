@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Floating Point
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/302380
-Icon=steam_icon_302380
-Terminal=false
-Type=Application
-Categories=Game;

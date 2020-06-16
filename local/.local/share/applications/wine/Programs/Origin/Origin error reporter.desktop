@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Origin error reporter
-Exec=env WINEPREFIX="/home/kira/Games/titanfall-2" /home/ubuntu/buildbot/runners/wine/lutris-5.6-2-x86_64/bin/wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/kira/Games/titanfall-2/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/Origin/Origin\\ error\\ reporter.lnk
-Type=Application
-StartupNotify=true
-Comment=Origin error reporter
-Path=/home/kira/Games/titanfall-2/dosdevices/c:/Program Files (x86)/Origin
-Icon=57EA_OriginER.0
-StartupWMClass=originer.exe

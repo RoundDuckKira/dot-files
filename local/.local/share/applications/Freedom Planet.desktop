@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Freedom Planet
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/248310
-Icon=steam_icon_248310
-Terminal=false
-Type=Application
-Categories=Game;
