@@ -46,6 +46,8 @@ $ stow xrdb -t ~/
 $ stow Wallpapers -t ~/
 
 Do basic stuff like using xrdb
+
+also, make sure to change which display you're using in polybar so that the bar will display. In the future I *may* try making some script that'll detect the first display and change that line on the config when needed, but IDK if I'll do it or not. Maybe as a college project. :p
 ```
 
 ### **And Voilla That's All!!**`
@@ -62,5 +64,5 @@ $ sudo xbps-remove -R stow git                                // Use ur distro's
 ```
 
 ### Some More Info
-**For helpful scripts Check Out:** [bin](https://gitlab.com/Tanish2002/dot-files/-/tree/master/bin%2Fbin) <br />
+**For helpful scripts frrom Tanish, check out:** [bin](https://gitlab.com/Tanish2002/dot-files/-/tree/master/bin%2Fbin) <br />
 
