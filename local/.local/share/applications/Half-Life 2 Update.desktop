@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Half-Life 2: Update
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/290930
-Icon=steam_icon_290930
-Terminal=false
-Type=Application
-Categories=Game;

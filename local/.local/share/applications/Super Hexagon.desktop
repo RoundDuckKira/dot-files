@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Super Hexagon
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/221640
-Icon=steam_icon_221640
-Terminal=false
-Type=Application
-Categories=Game;

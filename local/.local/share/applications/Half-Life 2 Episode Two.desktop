@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Half-Life 2: Episode Two
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/420
-Icon=steam_icon_420
-Terminal=false
-Type=Application
-Categories=Game;

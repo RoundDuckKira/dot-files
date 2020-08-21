@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Hyper Light Drifter
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/257850
-Icon=steam_icon_257850
-Terminal=false
-Type=Application
-Categories=Game;

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=The Witness
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/210970
-Icon=steam_icon_210970
-Terminal=false
-Type=Application
-Categories=Game;

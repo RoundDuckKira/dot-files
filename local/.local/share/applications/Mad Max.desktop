@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Mad Max
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/234140
-Icon=steam_icon_234140
-Terminal=false
-Type=Application
-Categories=Game;

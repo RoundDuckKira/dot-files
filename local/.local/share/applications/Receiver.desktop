@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Receiver
-Comment=Play this game on Steam
-Exec=steam steam://rungameid/234190
-Icon=steam_icon_234190
-Terminal=false
-Type=Application
-Categories=Game;
