@@ -64,7 +64,7 @@ bspc config click_to_focus       true
 
 # Rules
 
-bspc config external_rules_command "$(which /usr/home/kira/.config/bspwm/bspwm-rules)"
+bspc config external_rules_command "$(which /home/kira/.config/bspwm/bspwm-rules)"
 
 bspc rule -a discord desktop="other" state=tiled follow=off
 bspc rule -a origin.exe state=floating 
