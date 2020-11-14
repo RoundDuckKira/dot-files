@@ -6,7 +6,7 @@
 
 # Terminal emulator
 super + Return
-        kitty
+	alacritty
 
 
 #------------------------------------------------------------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ super + d
                      				    ### APPS
 
 # firefox
-super + b
+super + c
 	firefox
 
 # dolphin
@@ -33,20 +33,8 @@ super + alt + f
 
 #------------------------------------------------------------------------------------------------------------------------------------
 
-			                       ### MPV(Multimedia Player)
+			                       ### Multimedia
 
-## MPV_Playlist Menu
-super + m
-        ~/bin/rofi_mpvtube
-## MPVCTL
-XF86AudioPlay
-	$HOME/bin/mpvctl -t
-
-XF86AudioNext
-	$HOME/bin/mpvctl -n
-
-XF86AudioPrev
-	$HOME/bin/mpvctl  -p
 
 XF86Audio{Lower,Raise}Volume{_, + alt}
 	pamixer --{decrease,increase} {4,10} && \
@@ -80,6 +68,10 @@ super + Delete
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# lock the desktop with xscreensaver
+super + Scroll_Lock
+	xscreensaver-command -lock
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 
 			                            ### BSPWM HOTKEYS
@@ -88,6 +80,10 @@ super + Escape
 # quit/restart bspwm
 super + shift + {Escape,r}
 	bspc {quit,wm -r}
+
+# restart/shutdown/suspend system
+super + shift + {F1,F2,F3}
+	loginctl {poweroff,reboot,suspend}
 
 # close and kill
 super + shift + q
@@ -178,16 +174,9 @@ super + ctrl + shift + space
 
 
 # expand a window by moving one of its side outward
-super + ctrl + {Left,Down,Up,Right}
+super + alt + {Left,Down,Up,Right}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + ctrl + shift + {Left,Down,Up,Right}
+super + alt + shift + {Left,Down,Up,Right}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
-
-
-# move a floating window
-super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
-
- 

@@ -27,10 +27,10 @@ override-redirect = false
 ; FONTS ;
 ;-------;
 
-font-0 = "Hack Nerd Font:size=10;3"
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=12;3"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=12;3"
-font-3 = "Font Awesome 5 Brands:pixelsize=12;3"
+font-0 = "Cozette:weight=regular:size=10"
+font-1 = "Cozette:weight=regular:size=10"
+font-2 = "Cozette:weight=regular:size=10"
+font-3 = "Cozette:weight=regular:size=10"
 
 ;--------;
 ; COLORS ;
@@ -57,7 +57,8 @@ tray-position = right
 tray-detached = false
 tray-padding = 4
 tray-maxsize = 16
-tray-offset-x = -10
+tray-offset-x = -6
+tray-offset-y = -1
 
 ;---------;
 ; MODULES ;
@@ -88,18 +89,18 @@ ws-icon-default = " "
 
 format = <label-state>
 
-label-focused = 
+label-focused = ☺
 label-focused-padding = 1.5
 
-label-occupied = 
+label-occupied = ♥
 label-occupied-padding = 1.5
 
 
-label-urgent = 
+label-urgent = ⚠
 label-urgent-padding = 1.5
 
 
-label-empty = •
+label-empty = ♡
 label-empty-padding = 1.5
 
 
@@ -140,7 +141,7 @@ label-full = %percentage%%
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-full = <ramp-capacity> <label-full>
-format-charging =  <label-charging>
+format-charging =  <label-charging>
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -152,33 +153,33 @@ ramp-capacity-4 = 
 type = internal/volume
 
 format-volume = <ramp-volume> <label-volume>
-format-muted =  muted
+format-muted = ﱝ muted
 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 
-[module/mpd]
-type = internal/mpd
+;[module/mpd]
+;type = internal/mpd
 
-label-offline = mpd is offline
-format-online = <icon-prev> <toggle> <icon-next> <label-song>
-format-offline = <label-offline>
-host = 127.0.0.1
-port = 6600
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+;label-offline = mpd is offline
+;format-online = <icon-prev> <toggle> <icon-next> <label-song>
+;format-offline = <label-offline>
+;host = 127.0.0.1
+;port = 6600
+;icon-prev = 
+;icon-stop = 
+;icon-play = 
+;icon-pause = 
+;icon-next = 
 
-label-song-maxlen = 25
-label-song-ellipsis = true
+;label-song-maxlen = 25
+;label-song-ellipsis = true
 
-bar-progress-width = 10
-bar-progress-indicator = |
-bar-progress-fill = ─
-bar-progress-empty = ─
+;bar-progress-width = 10
+;bar-progress-indicator = |
+;bar-progress-fill = ─
+;bar-progress-empty = ─
 
 [module/backlight]
 type = internal/backlight
@@ -191,19 +192,19 @@ format = <ramp> <label>
 
 label = %percentage%%
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 
 [module/wlan]
 type = internal/network
 
-interface = wlan0
+interface = wlo1
 
 interval = 5
 
-label-connected =  %essid%
-label-disconnected =  Not Connected
+label-connected = 直 %essid%
+label-disconnected = 睊 Not Connected
 
 [module/cpu]
 type = internal/cpu
@@ -212,12 +213,12 @@ label =  %percentage%%
 
 [module/memory]
 type = internal/memory
-label =  %gb_used%
+label =  %gb_used%
 
 [module/network]
 type = internal/network
-interface = wlan0
-label-connected =  %downspeed% |  %upspeed%
+interface = wlo1
+label-connected = ↓ %downspeed% | ↑ %upspeed%
 
 
 [module/discord]
@@ -225,8 +226,8 @@ type = custom/menu
 
 format-spacing = 1
 
-label-open = 
-label-close = 
+label-open = 
+label-close = ✕
 label-separator = |
 
 
@@ -236,8 +237,8 @@ menu-0-1 = DSCRD
 menu-0-1-exec = Discord &
 menu-0-2 = KILL
 menu-0-2-exec = killall Discord | killall Discord | killall telegram-desktop
-
-format-padding = 1
+format-margin = 1
+format-offset = -8
 
 [module/prev]
 type = custom/text
